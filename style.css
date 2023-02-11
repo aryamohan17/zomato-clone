@@ -1,7 +1,13 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@300&display=swap');
 
-*{
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +18,8 @@
     background-size: cover; 
     background-position: center; 
     color: white;
-    min-height: 92vh;
+    height: 497px;
+    width: 100%;
 
 }
 .navbar{
@@ -68,26 +75,56 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        width: 50%;
+        width: 60%;
         border-radius: 10px;
     }
     .hero_sec_inp_container .hero_sec_inp_loc{
         padding: 5px;
         border: none;
         outline: none;
-        border-right:2px solid grey;
 
     }
     .hero_sec_inp_loc{
         width: 35%;
+    }
+    .location_styl{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        margin-left: -124px;
+        background-color: white;
+        
+    }
+    /* .location_styl .loc_icon,.location_styl .down_icon{
+        position: absolute;
+    } */
+    /* .location_styl .loc_icon{
+        padding-left: 10px;
+    } */
+    /* .loc_dwn_arr{
+        border-right:2px solid grey;
+        padding-left: -10px;
+        padding-top: 10px;
+
+    } */
+     .hero_sec_inp_loc{
+        height: 100%;
+        width: 100%;
+        margin-left: 10px;
+        /* padding: 10px 155px 0 65px; */
+    }
+    .down_icon{
+        border-right: 2px solid grey;
+        letter-spacing: 2px;
     }
     .hero_sec_inp_container .hero_sec_inp_dish{
         padding: 5px;
         border: none;
         outline: none;
     }
-    .hero_sec_inp_dish{
-        width: 65%;
+    .dishes .hero_sec_inp_dish{
+        width: 186%;
     }
 
     /* we offer */
@@ -123,8 +160,10 @@
     /* responsive */
 
 @media only screen and (max-width:600px){
+  
     .hero_section{
-        min-height: 62vh;
+     
+        height: 497px;
     }
     .navbar_menu_container .user_icon{
         display: flex;
@@ -140,11 +179,7 @@
         width: 100%;
     }
   
-    .hero_sec_inp_loc,.hero_sec_inp_dish{
-        padding: 18px;
-        border-radius: 10px;
-        width: 98%;
-    }
+   
     .hero_section_head{
         font-size: 10px;
         width: 35%;
@@ -155,4 +190,63 @@
     .hero_sec_h1{
         font-size: 20px;
     }
+    .hero_sec_inp_container{
+        margin-top: -46px;
+    }
+     .location_styl{
+        margin-left: 1px;
+        background-color: white;
+        border-radius: 10px;
+        /* padding-left: 10px; */
+        width: 100%;
+    } 
+    .loc_icon{
+        padding-left: 10px;
+    }
+    .down_icon{
+        padding-right: 40px;
+    }
+    .dishes{
+        background-color: white;
+        border-radius: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+    .dishes .hero_sec_inp_dish{
+        /* margin-left: -70px; */
+        width: 100%;
+    }
+    .down_icon{
+        border-right: unset;
+        letter-spacing: unset;
+    }
+    /* .location_styl{
+        width: 100%;
+        position: relative;
+        padding: 10px;
+    } */
+    /* .loc_icon{
+        position: absolute;
+        left: 40px;
+    }
+    .down_icon{
+        position: absolute;
+    } */
+    /* .location_styl .hero_sec_inp_loc{
+        position: absolute;
+        width:345px;
+        height: 30px;
+        margin-left: -173px;
+        
+    } */
 }
+/* @media(min-width:900px){
+    .hero_section{
+        min-height: 28vh;
+    }
+    .hero_sec_container{
+        display: flex;
+        gap:20px;
+        height: 20px;
+    }
+} */

@@ -16,7 +16,7 @@
     <title>Zomato</title>
 </head>
 
-<body>
+<body style="overflow: auto;">
     <section class="hero_section">
         <header>
             <nav class="navbar">
@@ -36,10 +36,17 @@
         <!-- search bars -->
         <div class="hero_sec_container" >
             <img src="images/zomatoName.jpg" alt="Zomato_logo" class="hero_section_head">
-            <h1 class="hero_sec_h1">Discover the best food & drinks in Kochi</h1>
+            <h1 class="hero_sec_h1">Discover the best food & drinks in Kochi</h1><br>
             <div class="hero_sec_inp_container">
-                <i class="fa-solid fa-location-dot" ></i><input type="text" class="hero_sec_inp_loc" placeholder="Ernakulam,Kerala,India"/>
-                <input type="text" class="hero_sec_inp_dish" placeholder="Search for restuarent , cusinie or a dish">
+                <div class="location_styl">
+                <i class="fa-solid fa-location-dot loc_icon" style="color: rgb(224, 65, 65);"></i>
+                 <input type="text" class="hero_sec_inp_loc" placeholder="Ernakulam,Kerala,India"/>
+                
+                        <i class="fa-solid fa-sort-down down_icon"  style="color: black;"></i><br>
+                    </div>
+                <div class="dishes">
+                    <input type="text" class="hero_sec_inp_dish" placeholder="Search for restuarent , cusinie or a dish">
+                </div>
             </div>
         </div>
     </section>
