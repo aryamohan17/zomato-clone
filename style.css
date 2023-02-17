@@ -579,6 +579,15 @@ body{
     .get__the_app .semiContainer{
         width: 80%;
     }
+    .location_styl{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        margin-left: -83px;
+        background-color: white;
+        
+    }
 }
 
 /* 0-900 */
@@ -608,6 +617,15 @@ body{
 @media only screen and (max-width: 500px){
     .navigation_container{
             grid-template-columns: repeat(2, 1fr);
+    }
+    .location_styl{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        margin-left: -6px;
+        background-color: white;
+        
     }
 }
 
